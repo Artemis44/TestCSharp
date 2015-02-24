@@ -101,7 +101,27 @@ namespace ConsoleApplication1
                 }
             }
         }
+
+
+        private double pythagorean(double s1, double s2)
+        {
+            double hypot;
+            string str;
+
+            Console.WriteLine("Enter length of first side: ");
+            str = Console.ReadLine();
+            s1 = Double.Parse(str);
+
+            Console.WriteLine("Enter length of second side: ");
+            str = Console.ReadLine();
+            s2 = Double.Parse(str);
+
+            hypot = Math.Sqrt(s1 * s1 + s2 * s2);
+            Console.WriteLine("Hypotenuse is " + hypot); 
+            return hypot;
+        }
     }
+
 
     public class Human
     {
